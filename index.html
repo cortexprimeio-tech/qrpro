@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>QR PRO LK</title>
-        <style>
-            body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-            iframe { width: 100%; height: 100%; border: none; }
-        </style>
-    </head>
-    <body>
-        <iframe src="https://cortexprime-qr-pro-lk.hf.space"></iframe>
-    </body>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR PRO LK | Cortex Prime</title>
+    
+    <!-- Favicon: HF එකේ තියෙන ඔයාගේ Icon එකම මෙතනට ලින්ක් කළා -->
+    <link rel="icon" type="image/x-icon" href="https://huggingface.co/front/assets/huggingface_logo-noborder.svg">
+
+    <style>
+        /* සයිට් එකේ මුළු පෙනුම පාලනය කරන හැටි */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%;
+            overflow: hidden; 
+            background-color: #0b0f19; /* HF Dark theme එකට ගැලපෙන color එකක් */
+        }
+
+        /* Hugging Face App එක පෙන්වන Frame එක */
+        iframe { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+        }
+
+        /* Loading වෙද්දී පේන්න පොඩි ස්ටයිල් එකක් (Optional) */
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader">Loading QR PRO LK...</div>
+    <iframe 
+        src="https://cortexprime-qr-pro-lk.hf.space" 
+        allow="camera; clipboard-read; clipboard-write"
+    ></iframe>
+
+</body>
 </html>
